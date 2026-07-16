@@ -4,65 +4,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Munhwan Choi | Principal Engineer</title>
-  <meta name="description" content="Munhwan Choi의 반응형 프로페셔널 포트폴리오와 Games 영역">
+  <meta name="description" content="Munhwan Choi's matrix-inspired professional portfolio with experience, projects, research, contact details, and a responsive snake game.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304100a'/%3E%3Cpath d='M13 18h38L32 46Z' fill='%2344ff92'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top">Munhwan Choi</a>
-    <nav class="site-nav" aria-label="주요 메뉴">
+    <button class="nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false">
+      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__line"></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav id="site-navigation" class="site-nav" aria-label="Primary navigation" data-open="false">
+      <a href="#top">Home</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
       <a href="#games">Games</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <p class="eyebrow">Professional Portfolio</p>
-      <h1>Principal Engineer with software platform and architecture experience.</h1>
-      <p class="lead">Munhwan Choi, based in Suwon, Korea, with experience in Electron framework, Micro Service Architecture, and REST, plus Azure Fundamentals certification.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#games">Games 보기</a>
-        <a class="button secondary" href="./CV.pdf">CV PDF</a>
+  <main id="main">
+    <section id="top" class="hero panel">
+      <p class="eyebrow">Matrix Resume</p>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <h1>Principal Engineer with wireless networking and software engineering experience.</h1>
+          <p class="lead">
+            Munhwan Choi, based in Suwon, Korea, with experience in Wireless Networking,
+            Software Engineering, and IMS, plus Microsoft Certified: Azure Fundamentals.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#games">Play Games</a>
+            <a class="button secondary" href="./CV.pdf">Open CV PDF</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <p class="hero-card__label">Profile</p>
+          <dl>
+            <div><dt>Name</dt><dd>Munhwan Choi</dd></div>
+            <div><dt>Title</dt><dd>Principal Engineer</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:mhchoi7@gmail.com">mhchoi7@gmail.com</a></dd></div>
+            <div><dt>LinkedIn</dt><dd><a href="https://kr.linkedin.com/in/munhwan-choi-a83a4391" target="_blank" rel="noreferrer">munhwan-choi-a83a4391</a></dd></div>
+          </dl>
+        </aside>
       </div>
     </section>
 
-    <section class="content-grid">
+    <section class="section-grid">
       <article id="about" class="card">
-        <h2>About</h2>
-        <p>Munhwan Choi is a Principal Engineer focused on platform-oriented software work, with a background spanning Electron framework, Micro Service Architecture, and REST.</p>
+        <p class="eyebrow">About</p>
+        <h2>Platform-minded engineering.</h2>
+        <p>
+          Principal Engineer focused on wireless networking and software engineering, with a
+          background spanning IMS and platform delivery. The matrix style keeps the portfolio
+          bold while staying readable across devices.
+        </p>
       </article>
+
       <article id="experience" class="card">
-        <h2>Experience</h2>
-        <p>Principal Engineer, 2019.03 - Present, Suwon, Korea.</p>
-        <p>Senior Engineer, 2013.09 - 2019.02, Suwon, Korea.</p>
+        <p class="eyebrow">Experience</p>
+        <h2>Career timeline</h2>
+        <ul class="timeline">
+          <li><strong>Principal Engineer</strong><span>2019.03 - Present · Suwon, Korea</span></li>
+          <li><strong>Senior Engineer</strong><span>2013.09 - 2019.02 · Suwon, Korea</span></li>
+        </ul>
       </article>
+
       <article id="projects" class="card">
-        <h2>Skills</h2>
-        <p>Electron framework, Micro Service Architecture, REST.</p>
-        <p>Certification: Microsoft Certified: Azure Fundamentals.</p>
+        <p class="eyebrow">Projects</p>
+        <h2>Confirmed strengths</h2>
+        <p>Wireless Networking and Software Engineering delivery.</p>
+        <p>IMS platform experience and service coordination.</p>
+        <p>Microsoft Certified: Azure Fundamentals.</p>
       </article>
+
+      <article id="research" class="card">
+        <p class="eyebrow">Research</p>
+        <h2>Research highlights</h2>
+        <p>
+          CV.pdf does not fully list research outputs, so publication details stay marked
+          <span class="needs-review">[사람 확인 필요]</span>.
+        </p>
+        <p>
+          If you have verified research items later, we can drop them into this card without
+          changing the rest of the layout.
+        </p>
+      </article>
+
       <article class="card">
-        <h2>Education</h2>
-        <p>Ph.D. in Electrical Engineering and Computer Science, Seoul National University, 2007 - 2013.</p>
-        <p>M.S. in Electrical Engineering and Computer Science, Seoul National University, 2005 - 2007.</p>
-        <p>B.S. in Electrical Engineering, Seoul National University, 2001 - 2005.</p>
+        <p class="eyebrow">Education</p>
+        <h2>Seoul National University</h2>
+        <ul class="stack-list">
+          <li>Ph.D., Electrical Engineering and Computer Science, 2007 - 2013</li>
+          <li>M.S., Electrical Engineering and Computer Science, 2005 - 2007</li>
+          <li>B.S., Electrical Engineering, 2001 - 2005</li>
+        </ul>
       </article>
-      <article id="games" class="card games-card">
-        <h2>Games</h2>
-        <p>지렁이 게임과 테트리스는 다음 루프에서 연결합니다.</p>
-        <div class="games-placeholder" aria-hidden="true">GAMES AREA</div>
+
+      <article class="card">
+        <p class="eyebrow">Certification</p>
+        <h2>Microsoft Certified: Azure Fundamentals</h2>
+        <p>Listed in the CV and reflected here as a verified credential.</p>
       </article>
+    </section>
+
+    <section id="games" class="card games-section">
+      <div class="section-heading">
+        <p class="eyebrow">Games</p>
+        <h2>Snake challenge</h2>
+        <p>
+          Keyboard, WASD, and mobile touch controls are available. The game blocks reverse
+          turns, avoids duplicate timers, and keeps a high score in the browser.
+        </p>
+      </div>
+
+      <div class="game-layout">
+        <div class="game-stage">
+          <div class="scoreboard" aria-live="polite">
+            <div><span>Score</span><strong data-score>0</strong></div>
+            <div><span>High score</span><strong data-high-score>0</strong></div>
+            <div><span>Status</span><strong data-game-status>Ready</strong></div>
+          </div>
+
+          <canvas id="snake-canvas" class="snake-canvas" width="420" height="420" aria-label="Snake game board"></canvas>
+
+          <div class="game-actions">
+            <button type="button" class="button primary" data-action="start">Start</button>
+            <button type="button" class="button secondary" data-action="pause">Pause</button>
+            <button type="button" class="button secondary" data-action="restart">Restart</button>
+          </div>
+
+          <div class="touch-pad" aria-label="Mobile game controls">
+            <button type="button" class="touch-pad__button" data-direction="up">Up</button>
+            <div class="touch-pad__middle">
+              <button type="button" class="touch-pad__button" data-direction="left">Left</button>
+              <button type="button" class="touch-pad__button touch-pad__button--accent" data-action="pause">Pause</button>
+              <button type="button" class="touch-pad__button" data-direction="right">Right</button>
+            </div>
+            <button type="button" class="touch-pad__button" data-direction="down">Down</button>
+          </div>
+        </div>
+
+        <aside class="game-notes">
+          <h3>Controls</h3>
+          <ul>
+            <li>Arrow keys or WASD move the snake.</li>
+            <li>Touch buttons work on phones and tablets.</li>
+            <li>Opposite direction changes are blocked.</li>
+            <li>The game uses one animation loop only.</li>
+            <li>Press Start after Game Over to begin again.</li>
+          </ul>
+        </aside>
+      </div>
     </section>
   </main>
 
-  <footer id="contact" class="site-footer">
-    <p>Contact: mhchoi7@gmail.com | LinkedIn: munhwan-choi-a83a4391</p>
+  <footer id="contact" class="site-footer panel">
+    <p class="eyebrow">Contact</p>
+    <p><a href="mailto:mhchoi7@gmail.com">mhchoi7@gmail.com</a></p>
+    <p><a href="https://kr.linkedin.com/in/munhwan-choi-a83a4391" target="_blank" rel="noreferrer">LinkedIn profile</a></p>
   </footer>
 
+  <script src="./game.js" defer></script>
   <script src="./script.js" defer></script>
 </body>
 </html>
