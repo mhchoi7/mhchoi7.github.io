@@ -76,6 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
     window.__snakeGame = game;
   }
 
+  if (window.DodgerGame) {
+    const game = new window.DodgerGame({
+      canvas: document.querySelector('#dodger-canvas'),
+      scoreEl: document.querySelector('[data-dodger-score]'),
+      highScoreEl: document.querySelector('[data-dodger-high-score]'),
+      statusEl: document.querySelector('[data-dodger-status]'),
+      actionButtons: Array.from(document.querySelectorAll('[data-dodger-action]')),
+      directionButtons: Array.from(document.querySelectorAll('[data-dodger-direction]')),
+    });
+
+    game.mount();
+    window.__dodgerGame = game;
+  }
+
   markActive();
   window.addEventListener('scroll', markActive, { passive: true });
   window.addEventListener('resize', markActive);
